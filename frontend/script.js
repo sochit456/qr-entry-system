@@ -1,4 +1,4 @@
-const AUTH_PASSWORD = "admin123";
+const AUTH_PASSWORD = "admin@123";
 const page = document.body.dataset.page;
 
 function setMessage(element, message, type = "") {
