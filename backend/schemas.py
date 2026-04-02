@@ -7,8 +7,8 @@ from pydantic import BaseModel, Field
 class RegisterStudentRequest(BaseModel):
     name: str = Field(..., min_length=1, max_length=120)
     roll_no: str = Field(..., min_length=1, max_length=50)
-    course: str = Field(..., min_length=1, max_length=120)
-    contact: str = Field(..., min_length=1, max_length=50)
+    course: Literal["BCA 1st", "BCA 2nd", "BCA 3rd", "PGDCA"]
+    contact: str = Field(..., min_length=1, max_length=10)
 
 
 class RegisterStudentResponse(BaseModel):
