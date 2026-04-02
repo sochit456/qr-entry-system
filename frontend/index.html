@@ -77,11 +77,18 @@
                         </label>
                         <label class="input-group">
                             <span>Course</span>
-                            <input type="text" name="course" placeholder="Enter course name" required>
+                            <label for="course">Choose Course:</label>
+                            <select name="course" id="course" required>
+                            <option value=" " disabled selected>Select Course</option>
+                            <option value="BCA 1st" >BCA 1st</option>
+                            <option value="BCA 2nd" >BCA 2nd</option>
+                            <option value="BCA 3rd" >BCA 3rd</option>
+                            <option value="PGDCA" >PGDCA</option>
+                            </select>
                         </label>
                         <label class="input-group">
                             <span>Contact</span>
-                            <input name="contact" placeholder="Enter phone number" required>
+                            <input name="contact" type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="Enter phone number" type="tel" maxlength="10" pattern="[0-9]{10}" required>
                         </label>
                         <button id="registrationSubmit" type="submit" class="primary-button primary-button--wide">
                             <span class="button-label">Generate QR Pass</span>
