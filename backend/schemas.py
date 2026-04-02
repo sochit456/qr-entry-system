@@ -8,7 +8,7 @@ class RegisterStudentRequest(BaseModel):
     name: str = Field(..., min_length=1, max_length=120)
     roll_no: str = Field(..., min_length=1, max_length=50)
     course: str = Field(..., min_length=1, max_length=120)
-    contact: str = Field(..., min_length=1, max_length=10)
+    contact: str = Field(..., min_length=1, max_length=50)
 
 
 class RegisterStudentResponse(BaseModel):
