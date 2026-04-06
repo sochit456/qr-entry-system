@@ -398,6 +398,20 @@ input {
     transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
+select {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius-sm);
+
+    background: rgba(255, 255, 255, 0.09);
+    color: var(--text);
+
+    outline: none;
+}
+
 input::placeholder {
     color: rgba(241, 248, 243, 0.42);
 }
