@@ -34,31 +34,21 @@ project/
 
 ## Setup
 
-1. Install Python 3.10 or newer.
-2. Create a virtual environment:
-
+1. Build Command:
 ```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
 
-3. Install dependencies:
+2. Start Command::
 
 ```powershell
-python -m pip install -r requirements.txt
+uvicorn backend.main:app --host 0.0.0.0 --port 10000
 ```
-
-4. Start the application:
-
+3. Service → Environment → Add Variable:
 ```powershell
-python -m uvicorn backend.main:app --reload
+ Key: DATABASE_URL
+Value: (paste your postgres URL)
 ```
-
-5. Open the pages in your browser:
-
-- Registration: `http://127.0.0.1:8000/`
-- Scanner: `http://127.0.0.1:8000/scanner`
-- Admin: `http://127.0.0.1:8000/admin`
 
 ## API Endpoints
 
