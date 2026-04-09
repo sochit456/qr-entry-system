@@ -1,4 +1,4 @@
-# QR-Based College Entry System
+# QR-Based Entry System
 
 A FastAPI + SQLite web application for student registration, QR code generation, gate scanning, and admin monitoring during college events.
 
