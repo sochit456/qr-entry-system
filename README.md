@@ -13,23 +13,25 @@ A FastAPI + SQLite web application for student registration, QR code generation,
 ## Project Structure
 
 ```text
-project/
-|-- backend/
-|   |-- __init__.py
-|   |-- database.py
-|   |-- main.py
-|   |-- models.py
-|   |-- schemas.py
-|   |-- utils.py
-|-- frontend/
-|   |-- admin.html
-|   |-- index.html
-|   |-- scanner.html
-|   |-- script.js
-|   |-- style.css
-|-- qr_codes/
-|-- database.db
-|-- requirements.txt
+QR-Entry-System/
+├── README.md
+├── requirements.txt
+├── database.db
+├── backend/
+│   ├── __init__.py
+│   ├── __pycache__/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── utils.py
+└── frontend/
+    ├── index.html
+    ├── admin.html
+    ├── scanner.html
+    ├── script.js
+    ├── style.css
+    └── logo.png
 ```
 
 ## Setup
