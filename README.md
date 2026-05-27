@@ -16,7 +16,7 @@ A FastAPI + SQLite web application for student registration, QR code generation,
 QR-Entry-System/
 ├── README.md
 ├── requirements.txt
-├── database.db
+├── .gitignore
 ├── backend/
 │   ├── __init__.py
 │   ├── __pycache__/
